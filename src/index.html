@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>react-ts-frame</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <link rel="dns-prefetch" href="//cdn.innodealing.com" />
+    <script src="https://cdn.innodealing.com/common/babel-polyfill/7.0.0/polyfill.min.js"></script>
+    <script>
+      if (!Element.prototype.matches) {
+        Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
+      }
+
+      if (!Element.prototype.closest) {
+        Element.prototype.closest = function(s) {
+          var el = this;
+          if (!document.documentElement.contains(el)) return null;
+          do {
+            if (el.matches(s)) return el;
+            el = el.parentElement;
+          } while (el !== null);
+          return null;
+        };
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.innodealing.com/common/echarts/4.2.1/echarts.min.js"></script>
+    <script src="https://cdn.innodealing.com/common/immutable/3.8.2/immutable.min.js"></script>
+    <script src="https://cdn.innodealing.com/common/lodash.js/4.17.15/lodash.min.js"></script>
+    <script src="https://cdn.innodealing.com/common/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdn.innodealing.com/common/react/16.9.0/umd/react.production.min.js"></script>
+    <script src="https://cdn.innodealing.com/common/react-dom/16.9.0/umd/react-dom.production.min.js"></script>
+  </body>
+</html>
