@@ -3,7 +3,7 @@ import { RouteComponentProps, withRouter } from "react-router-dom";
 
 export interface PageProps extends RouteComponentProps {}
 
-const Page = (props: PageProps) => {
+const Page: React.FC<PageProps> = props => {
   return (
     <div style={{ padding: "10px" }}>
       <div>current param: {props.location.search}</div>
