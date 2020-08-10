@@ -55,9 +55,9 @@ export default class Page extends React.Component {
             <span>Github: </span>
             <a
               target="_blank"
-              href="https://github.com/zhangist/react-ts-boilerplate"
+              href="https://github.com/chasonhuang/react-ts-frame"
             >
-              zhangist/react-ts-boilerplate
+              chasonhuang/react-ts-frame
             </a>
           </div>
         </div>
